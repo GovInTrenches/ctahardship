@@ -6,7 +6,7 @@
 
   :javascript
     (function() {
-      var us_centroid = new google.maps.LatLng(37.09024,-95.712891);
+      var us_centroid = new google.maps.LatLng(41.850033, -87.6500523);
       var tableId = "1wbmkAeFa-MYAwZ39FlgcesTJ8ti3e4oZfsrqesA"; // Open Data
       //var tableId = "1141224"
       var filters = [
@@ -14,8 +14,10 @@
         
       ];
 
-      map = new Fusion.Map("template_map", {center: us_centroid, zoom: 4, mapTypeControl: true});
+      map = new Fusion.Map("template_map", {center: us_centroid, zoom: 11, mapTypeControl: true});
+      var layer2 = map.layers.create({select: "geometry", from: "1lqKXJ_V3yAm7XpsuVYD_UTXwvxHDf54GHzpYOMI"});
       var layer = map.layers.create({select: "geometry", from: tableId});
+      
       map.present();
 
       filterPanel = new OpenCity.Template.FilterPanel(tableId, filters, {
