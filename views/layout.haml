@@ -23,6 +23,8 @@
       .page-header
         %h1
           Map of Chicago's Social Safety Net
+        %p
+          Social service non-profits & state payments made to providers
 
       = yield
     
@@ -31,3 +33,5 @@
 
     = include_javascript :"analytics_lib" if production?
 
+  %p
+  Testing Place 2
