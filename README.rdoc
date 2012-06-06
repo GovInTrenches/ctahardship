@@ -1,3 +1,8 @@
+== Chicago Social Safety Net
+Map generated based on geolocated data of Chicago social service non-profits. 
+
+Based on Open City site template, info follows 
+
 = Open City site template
 
 Simple site template using Ruby, Sinatra and Haml with tie-ins to Heroku and Google Analytics.
@@ -57,3 +62,4 @@ Report it here: https://github.com/open-city/site-template/issues
 Copyright (c) 2012 Chad W Pry, Derek Eder, and OpenCity. Released under the MIT License.
 
 See LICENSE for details https://github.com/open-city/site-template/wiki/License
+

@@ -28,6 +28,10 @@ module OpenCity
       response.headers["X-Frame-Options"] = 'GOFORIT'
       haml :index
     end
+  
+    get "/timeline.html" do
+      File.read(File.join('views', 'timeline.html'))
+    end
     
     get "/:page" do
       @current_menu = params[:page]
