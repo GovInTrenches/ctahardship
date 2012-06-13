@@ -15,8 +15,10 @@
       ];
 
       map = new Fusion.Map("template_map", {center: us_centroid, zoom: 11, mapTypeControl: true});
-      var layer2 = map.layers.create({select: "geometry", from: "1lqKXJ_V3yAm7XpsuVYD_UTXwvxHDf54GHzpYOMI"});
-      var layer = map.layers.create({select: "geometry", from: tableId});
+
+      var layer2 = map.layers.create({select: "geometry", from: "1lqKXJ_V3yAm7XpsuVYD_UTXwvxHDf54GHzpYOMI"}); // hunger map
+      var layer3 = map.layers.create({select: "geometry", from: "1yEDKyyMb8Y2HPv4gAVa77wHe370D5cwGx48y_aU"}); // cta
+      var layer1 = map.layers.create({select: "geometry", from: tableId}); //social services
       
       map.present();
 
