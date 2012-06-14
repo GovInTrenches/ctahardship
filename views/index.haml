@@ -1,3 +1,8 @@
+// This project was put together as part of a capstone project for School of Public Service at DePaul University
+// This site uses a template designed by OpenCity.org that takes google fusion tables and maps it
+// State payment data is from a FOIA request made to the State of Illinois Comptroller 
+// You can contact the owner of this site on twitter @GovinTrenches
+
 - content_for :javascripts do
   = include_javascript :mustache
   = include_javascript "http://maps.google.com/maps/api/js?sensor=false" 
@@ -16,9 +21,9 @@
 
       map = new Fusion.Map("template_map", {center: us_centroid, zoom: 11, mapTypeControl: true});
 
-      var layer2 = map.layers.create({select: "geometry", from: "1lqKXJ_V3yAm7XpsuVYD_UTXwvxHDf54GHzpYOMI"}); // hunger map
-      var layer3 = map.layers.create({select: "geometry", from: "1yEDKyyMb8Y2HPv4gAVa77wHe370D5cwGx48y_aU"}); // cta
-      var layer1 = map.layers.create({select: "geometry", from: tableId}); //social services
+      var layer2 = map.layers.create({select: "geometry", from: "1lqKXJ_V3yAm7XpsuVYD_UTXwvxHDf54GHzpYOMI"}); //hunger map
+      var layer3 = map.layers.create({select: "geometry", from: "1yEDKyyMb8Y2HPv4gAVa77wHe370D5cwGx48y_aU"}); //cta
+      var layer1 = map.layers.create({select: "geometry", from: tableId}); //social services map derived from state of illinois data
       
       map.present();
 
