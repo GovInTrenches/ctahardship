@@ -30,7 +30,7 @@
       filterPanel = new OpenCity.Template.FilterPanel(tableId, filters, {
         map: map, callbackObject: "filterPanel"
       });
-      filterPanel.present();
+      //filterPanel.present(); <- Filter panel hidden because it's not working - Google changed API
     })(); 
 
 
@@ -39,7 +39,28 @@
   .span3
     #filters
     %p<
-      %b Map is generated from payment data made to social service non-profits in Chicago. You can find the raw data here
+      Cash Assistance - Large Purple
+    %p<  
+      Closed - Large Red
+    %p<
+      Family Services - Small Red
+    %p<
+      Housing - Small Yellow
+    %p<
+      Hunger - Small Green
+    %p<
+      Medical - Small Blue
+    %p<
+      Mental Health - Large Green
+    %p<
+      Multiple - Large Blue
+    %p<
+      Referral - Large Yellow
+    %p< 
+      Substance Abuse - Large Purple
+    %p< 
+      Youth Program - Small Purple
+    %p<
     %p
       %b State Payment Data to Non-Profit Social Service Providers 
       = link_to 'here', 'https://www.google.com/fusiontables/DataSource?snapid=S51080177X6'
@@ -53,10 +74,7 @@
     %p
       = link_to 'The Geography of Hunger', 'http://www.chicagonewscoop.org/chicago/wp-content/maps/hunger/'
     %p
-    %p< 
-      %b See a timeline of the recession and how it has affected Chicago
-    %p
-      = link_to 'Recession Timeline', 'http://www.chicagosocialsafety.net/timeline.html'
+
 
     
   #template_map.span9
