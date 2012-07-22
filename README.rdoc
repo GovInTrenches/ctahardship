@@ -1,7 +1,12 @@
-== Chicago Social Safety Net
-Map generated based on geolocated data of Chicago social service non-profits. 
+== Chicago CTA Hardship Map
+Map attempting to show poverty as a CTA map
+Originally inspired by this map: http://spatialanalysis.co.uk/2012/07/lives-on-the-line/ 
 
-Based on Open City site template, info follows 
+This site by Christopher Whitaker, @GovInTrenches
+
+Email: mailto:christopherpaulwhitaker@gmail.com
+
+Site built on Open City site template, info follows 
 
 = Open City site template
 
@@ -26,7 +31,7 @@ Simple site template using Ruby, Sinatra and Haml with tie-ins to Heroku and Goo
   Google Analytics
   Google Fusion Tables
 
-== Team
+== Open City Team
 
 * Chad W Pry mailto:chad.pry@opencityapps.org
 * Derek Eder mailto:derek.eder@opencityapps.org
