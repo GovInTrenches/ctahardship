@@ -1,7 +1,7 @@
 !!!
 %html{:lang => "en"}
   %head
-    %title Map of Chicago's Social Safety Net
+    %title CTA Hardship Index
     %meta{:"http-equiv" => "Content-Type",       :content => "text/html; charset=utf-8"}
     %meta{:"http-equiv" => "Content-Style-Type", :content => "text/css"}
 
@@ -23,9 +23,9 @@
     #container
       .page-header
         %h1
-          Map of Chicago's Social Safety Net (Beta)
+          Poverty in Chicago as a CTA Map (alpha version)
         %p
-          Click on each resource to see state payments to these non-profits since 2002 or click to see the 
+          Click to see the 
           = link_to 'Recession Timeline', 'http://www.chicagosocialsafety.net/timeline.html'
 
       = yield
@@ -36,7 +36,7 @@
     = include_javascript :"analytics_lib" if production?
 
   %p
-  Website constructed by Christopher Whitaker as a Capstone Project for DePaul University's School of Public Service. You can reach him on Twitter @GovInTrenches 
+  Website constructed by Christopher Whitaker. You can reach him on Twitter @GovInTrenches 
   %p
   %p
 

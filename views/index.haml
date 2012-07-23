@@ -1,6 +1,4 @@
-// This project was put together as part of a capstone project for School of Public Service at DePaul University
-// This site uses a template designed by OpenCity.org that takes google fusion tables and maps it
-// State payment data is from a FOIA request made to the State of Illinois Comptroller 
+// Project that aims to showcase poverty in Chicago by creating a CTA map 
 // You can contact the owner of this site on twitter @GovinTrenches
 
 - content_for :javascripts do
@@ -22,10 +20,10 @@
       map = new Fusion.Map("template_map", {center: us_centroid, zoom: 11, mapTypeControl: true});
 
       
-      var layer2 = map.layers.create({select: "geometry", from: "1g_pCtB0sShNYwp-RxcSSJEF_T5Ni7aXPEkKrXII"}); //hardship map
-      var layer3 = map.layers.create({select: "geometry", from: "1yEDKyyMb8Y2HPv4gAVa77wHe370D5cwGx48y_aU"}); //cta
-      var layer4 = map.layers.create({select: "geometry", from: "1mX6chBroewdMesrXtTl_MHfya0WUZnKCOrf6Yso"}); //cta station map
-      var layer1 = map.layers.create({select: "geometry", from: tableId}); //social services map derived from state of illinois data
+      var layer1 = map.layers.create({select: "geometry", from: "1g_pCtB0sShNYwp-RxcSSJEF_T5Ni7aXPEkKrXII"}); //hardship map
+      var layer2 = map.layers.create({select: "geometry", from: "1yEDKyyMb8Y2HPv4gAVa77wHe370D5cwGx48y_aU"}); //cta
+      var layer3 = map.layers.create({select: "geometry", from: "1mX6chBroewdMesrXtTl_MHfya0WUZnKCOrf6Yso"}); //cta station map
+      
       
       
       map.present();
@@ -36,54 +34,24 @@
       //filterPanel.present(); <- Filter panel hidden because it's not working - Google changed API
     })(); 
 
-// Attempting to add Google Tacking
+// Google Tacking to come later - nulling code for now 
 // Google Analytics ID UA-32663273-1
-:javascript
-  var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', 'UA-32663273-1']);
-   _gaq.push(['_trackPageview']);
+// :javascript
+//  var _gaq = _gaq || [];
+//   _gaq.push(['_setAccount', 'UA-32663273-1']);
+//   _gaq.push(['_trackPageview']);
 
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+//    (function() {
+//    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//  })();
 
 
 .row-fluid
   .span3
     #filters
-    %p<
-      Cash Assistance - Large Purple
-    %p<  
-      Closed - Large Red
-    %p<
-      Family Services - Small Red
-    %p<
-      Housing - Small Yellow
-    %p<
-      Hunger - Small Green
-    %p<
-      Medical - Small Blue
-    %p<
-      Mental Health - Large Green
-    %p<
-      Multiple - Large Blue
-    %p<
-      Referral - Large Yellow
-    %p< 
-      Substance Abuse - Large Purple
-    %p< 
-      Youth Program - Small Purple
-    %p<
-    %p
-      %b State Payment Data to Non-Profit Social Service Providers 
-      = link_to 'here', 'https://www.google.com/fusiontables/DataSource?snapid=S51080177X6'
-    %p<
-      %b The City of Chicago's data from metrochicagodata.org was used to determine payments to social non-profits
-    %p
-      %b City Payment Data to Non-Profit Social Service Providers 
-      = link_to 'here', 'https://docs.google.com/spreadsheet/ccc?key=0Ai6V_YElwVP5dEU0VkY0NTdJT3VyR0ZqRnNHeTJsbmc'
+    
     %p<
       %b Information on poverty, crowded housing, employment and harship provided by the City of Chicago. 
       = link_to ' here', 'https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2'
