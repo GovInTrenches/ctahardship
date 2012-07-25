@@ -24,7 +24,7 @@
       var layer2 = map.layers.create({select: "geometry", from: "1yEDKyyMb8Y2HPv4gAVa77wHe370D5cwGx48y_aU"}); //cta
       var layer3 = map.layers.create({select: "geometry", from: "1X8nHZNuXJQrpABeqsKRFpKj5GVrOEgB-RkBLgXE"}); //cta station map with hardship data filtered
       var layer4 = map.layers.create({select: "geometry", from: "1dA7O9HQ8XtK9R5i3-wu2B4cGNSYIbYNggH-rON8"}); //metra lines
-      // var layer5 = map.layers.create({select: "geometry", from: "1qG7aqtFp7ZKR-b6B7ot6Mi_V4zZbKP2O1egPEng"}); //metra stations
+      var layer5 = map.layers.create({select: "geometry", from: "1D5o6kFcDpAExvzBsAid_OP2JnotWB44vG-3_aBs"}); //metra stations
       
       
       
@@ -57,6 +57,7 @@
     %p< This map is a modified Chicago CTA Map where all the lines and CTA stations are present.
     %p< The map divides the city into the 77 community areas. These areas are colored based on the hardship index. The greater the hardship index, the darker it appears on the map.
     %p< The station locations show green for stations in community areas where the median income is above the poverty line for a family of four ($23,018)   or red if below this line. 
+    %p< Note: Data for Metra stations was just updated, but google takes a bit to update the color scheme. This should appear correctly for stations within the city within 24 hours.
     %p<
       Information on poverty, crowded housing, employment and hardship provided by the City of Chicago. 
       = link_to ' See it here', 'https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2'
