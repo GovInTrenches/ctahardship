@@ -2,7 +2,9 @@
 Map attempting to show poverty as a CTA map
 Originally inspired by this map: http://spatialanalysis.co.uk/2012/07/lives-on-the-line/ 
 
-This site by Christopher Whitaker, @GovInTrenches
+This app is no longer maintained. 
+
+This site by Christopher Whitaker, @GovInTrenches and Josh Kalov, @shua123
 
 Email: mailto:christopherpaulwhitaker@gmail.com
 
